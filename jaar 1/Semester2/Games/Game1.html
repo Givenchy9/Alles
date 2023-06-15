@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #achtergrond{
+                background-color: lightgreen;
+                width: 600px;
+                height: 300px;
+                position: relative;
+                top: 10px;
+                left: 10px; 
+                border: solid black 5px;
+            }
+            #blok{
+                height: 40px;
+                width: 40px;
+                position: relative;
+                top: 10px;
+                left: 10px;
+                background-color: blue;
+            }
+            button{
+                height: 100px;
+            }
+        </style>
+        <script>
+            let stapX = 30;
+            let stapY = 40;
+            function myFunction() {
+                //console.log("hoi");
+                let posY = document.getElementById("blok").offsetTop;
+                console.log("postY" + posY);
+                if(posY+stapY > 260 || (posY + stapY) < 0) {
+                    stapY = -stapY;
+                }
+                // if(posY+stapX > 260 || (posY + stapX) < 0) {
+                //     stapX = -stapX;
+                // }
+                // if ((posY + stapY) < 0) {
+                //     stapY = -stapY
+                // }
+                document.getElementById("blok").style.top = (posY + stapY) + "px";
+                // document.getElementById("blok").style.left = (posY + stapX) + "px";
+            }
+            setInterval(myFunction, 100)
+            function moveleft() {
+            const img = document.getElementById('blok');
+            img.style.left = `${img.offsetLeft - 50}px`;
+            }
+
+            function moveright() {
+            const img = document.getElementById('blok');
+            img.style.left = `${img.offsetLeft + 50}px`;
+            }
+
+            // function moveup() {
+            // const img = document.getElementById('blok');
+            // img.style.top = `${img.offsetTop - 50}px`;
+            // }
+
+            // function movedown() {
+            // const img = document.getElementById('blok');
+            // img.style.top = `${img.offsetTop + 50}px`;
+            // }
+                
+        </script>
+    </head>
+    <body>
+        <div id="achtergrond">
+            <div id="blok" onclick="myFunction()"></div>
+        </div>
+            <button id="left" onclick="moveleft()">left</button>
+            <button id="right" onclick="moveright()">right</button>
+            <!-- <button class="down" onclick="movedown()">down</button>
+            <button class="up" onclick="moveup()">up</button> -->
+    </body>
+</html>

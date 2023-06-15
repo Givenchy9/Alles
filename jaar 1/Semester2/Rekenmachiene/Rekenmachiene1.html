@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #demo{
+            border: solid red 1px;
+            padding: 10px;
+            width: 30px;
+        }
+    </style>
+    <script>
+        function myFunction(){
+            number1 = document.getElementById("nummer1").value*1
+            number2 = document.getElementById("nummer2").value*1
+            document.getElementById("demo").innerHTML = number1 + number2;
+        }
+    </script>
+</head> 
+<body>
+    
+    <input id="nummer1" type="text" name="text1">
+    +
+    <input id="nummer2" type="text" name="text2">
+    =
+    <p id="demo"></p>
+    <button onclick="myFunction()">probeer</button>
+</body>
+</html>

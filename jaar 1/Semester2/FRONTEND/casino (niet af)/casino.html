@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>games</title>
+        <style>
+            #stopwatch{
+                margin: auto;
+                height: 200px;
+                width: 150px;
+                background-color: black;
+            }
+            h1{
+                color: wheat;
+            }
+            #input{
+                margin: auto;
+                border: solid wheat 3px;
+                width: 100px;
+                height: 50px;
+                display: block;
+                background-color: white;
+                font-size: 150%;
+                padding-left: 10px;
+            }
+            #buttons{
+                display: block;
+                margin: auto;
+                width: 200px;
+            }
+            #start{
+                margin: auto;
+                margin-top: 10px;
+                background-color: wheat;
+            }
+            #stop{
+                margin: auto;
+                margin-top: 10px;
+                background-color: wheat;
+            }   
+            #reset{
+                margin: auto;
+                margin-top: 10px;
+                background-color: wheat;
+            }   
+        </style>
+        <script>
+            function fStart(){
+                console.log("het werkt")
+                // let mijnInterval = document.getElementById("input").value
+                setInterval(1000)
+                document.getElementById("input").innerHTML = mijnInterval
+            }
+        </script>
+    </head>
+    <body>
+        <div id="stopwatch">
+            <h1>Stopwatch</h1>
+            <div id="input">
+                00:00:00
+            </div>
+            <div id="buttons">
+                <button id="startTimer" onclick="fStart()">Start</button>
+                <button id="stopTimer">Stop</button>
+                <button id="resetTimer">Reset</button>
+            </div>
+        </div>
+    </body>
+</html>
+

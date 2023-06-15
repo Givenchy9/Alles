@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>games</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h2>The setInterval() Method</h2>
+        <div id="display"></div>
+        <button onclick="fStop()">stop</button>
+        <script>
+            let sec = 0;
+            let mijnInterval = setInterval(secTeller, 1000);
+
+        function fStop() {
+            clearInterval(mijnInterval)
+        }
+
+        function secTeller() {
+            sec = sec + 1;
+            document.getElementById("display").innerHTML = sec + " sec";
+        }
+        </script>
+    </body>
+</html>

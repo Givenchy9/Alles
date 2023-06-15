@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+        </style>
+        <script>
+            let sec = 0;
+            let mijnInerval;
+
+            function fStart() {
+                mijnInterval = setInterval(secTeller, 10)
+            }
+            function fStop() {
+                clearInterval(mijnInterval)
+            }
+
+            function secTeller(){
+                sec = sec +1;     
+                document.getElementById("demo").innerHTML = sec + " seconden";
+            }
+        </script>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <button onclick="fStop()">stop</button>
+    </body>
+</html>

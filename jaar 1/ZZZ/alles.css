@@ -1,0 +1,169 @@
+#body {
+    margin:0;
+    background-color: #faf9f6;
+    /* background-image: url("IMG/abstract-marble.jpg"); */
+}
+#container{
+  margin-left: 10%;
+  width: 80%;
+}
+#header{
+  background-color: black;
+  color: white;
+  height: 15vh;
+  font-size: 300%;
+  text-align: center;
+}
+/* .header1{
+  background-color: white;
+  color: black;
+  height: 15vh;
+  font-size: 300%;
+  text-align: center;
+} */
+#nav{
+  background-color: red;
+  height: 5vh;
+}
+main {
+    display:flex;
+    height:70vh;
+}
+section {
+    flex:3;
+    background-color: white;
+    opacity: 50%;
+    font-size: 300%;
+    text-align: center;
+    background-color: white;
+}
+aside {
+    background-color: aqua;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 50%;
+    background-color: crimson;
+}
+#ctrlBar {
+    background-color: red;
+    color:white;
+    padding: 5px;
+}
+.open{
+    flex:2;
+}
+.close{
+    flex:0;
+}
+footer{
+  background-color: black;
+  height: 10vh;
+  font-size: 200%;
+  color: red;
+  text-align: right;
+}
+h1{
+  margin: 0;
+}
+#modusbutton {
+  background-color: salmon;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#modusbutton1 {
+  background-color: lightblue;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#dialogknop {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#overlay{
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+  z-index: 1;
+}
+.overlay1{
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+  z-index: 1;
+}
+#dialog{
+  position: absolute;
+  margin-top: -400px;
+  height: 200px;
+  width: 150px;
+}
+#dialog1{
+  height: 400px;
+  width: 150px;
+}
+#hd{
+  height: 15%;
+  background-color: red;
+  border-top-left-radius : 25px;
+  border-top-right-radius : 25px;
+}
+#ct{
+  height: 70%;
+  background-color: white;
+}
+#ft{
+  height: 15%;
+  background-color: red;
+  border-bottom-left-radius : 25px;
+  border-bottom-right-radius : 25px;
+}
+#outputDiv{
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 5px;
+}
+#outputDiv{
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 5px;
+}
+#lt{
+    width: 40px;
+}
+#jaartal{
+    width: 40px;
+}

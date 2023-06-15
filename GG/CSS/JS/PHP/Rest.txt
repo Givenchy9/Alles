@@ -1,0 +1,179 @@
+<style>
+
+    #nav{
+    background-color: white;
+    border-bottom: solid gainsboro 2px;
+    height: 7,5vh;
+    padding: 10px;
+    padding-left: 0px;
+}
+#nav-div{
+    margin: auto;
+}
+.links{
+    background-color: lightblue;
+    color: grey;
+    text-decoration: none;
+    transition: 2s;
+    padding: 10px;
+    border: solid grey 3px;
+    border-radius: 15px;
+}
+.links:hover{
+    background-color: gray;
+    color: lightblue;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 0px;
+    border: solid lightblue 3px;
+}
+.links:active{
+    background-color: red;
+}
+#nav2{
+    background-color: grey;
+    height: 10vh;  
+    margin-top: -500px;
+    border: solid lightblue 5px;
+}
+#exit{
+    background-color: red;
+    height: 40px;
+    width: 50px;
+}
+.semesters{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+}
+#nav3{
+    background-color: grey;
+    height: 10vh;  
+    border: solid lightblue 5px;
+    opacity: 0%;
+}   
+.semesters3{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+}
+
+</style>
+<script>
+
+    function mouseOver(x){
+    console.log("het werkt")
+    document.getElementById("nav2").style.marginTop = "0px";
+    document.getElementById("nav2").style.transition = "1s";
+}
+function mouseOut(x){
+    document.getElementById("nav2").style.marginTop = "0px";
+}
+function myFunctionExitNav(){
+    document.getElementById("nav2").style.marginTop = "-500px";
+}
+
+function myFunctionNav3(){
+    document.getElementById("nav3").style.opacity = "100%";
+}
+function myFunctionExitNav3(){
+    document.getElementById("nav3").style.opacity = "0%";
+}
+
+function myFunctionNavBasisOpdrachten(){
+    document.getElementById("navBasisOpdrachten").style.marginTop = "0px";
+}
+function myFunctionExitNavBasisOpdrachten(){
+    document.getElementById("navBasisOpdrachten").style.marginTop = "-1000px";
+}
+
+function myFunctionNavFrontend(){
+    document.getElementById("navFrontend").style.marginTop = "0px";
+}
+function myFunctionExitNavFrontend(){
+    document.getElementById("navFrontend").style.marginTop = "-1000px";
+}
+
+function myFunctionNavGames(){
+    document.getElementById("NavGames").style.marginTop = "0px";
+}
+function myFunctionExitNavGames(){
+    document.getElementById("NavGames").style.marginTop = "-1000px";
+}
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="nav">
+        <div id="nav-div">
+            <button class="links" id="link1" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Sites</button>
+            <button class="links" id="link2">Codes</button>
+        </div>
+    </nav>
+
+
+
+    <div id="nav2">
+            <button class="semesters"><a href="../jaar 1/Semester1/Semester1/Semester1.php" target="blac">Semester1</a></button>
+            <button class="semesters" onclick="myFunctionNav3()">Semester2</button>
+            <button id="exit" onclick="myFunctionExitNav()">X</button>
+        </div>
+        <div id="nav3">
+            <p class="p-nav">Klik van links naar rechts</p>
+            <button class="semesters3" onclick="myFunctionNavBasisOpdrachten()">Open alles</button>
+            <button class="semesters3" onclick="myFunctionNavBasisOpdrachten()">Basis Opdrachten</button>
+            <button class="semesters3"><a href="../jaar 1/Semester2/Form/FormZ/FormZ.html" target="blanc">Form</a></button>
+            <button class="semesters3" onclick="myFunctionNavFrontend()">Frontend</button>
+            <button class="semesters3" onclick="myFunctionNavGames()">Games</button>
+            <button class="semesters3">Rekenmachiene</button>
+            <button id="exit" onclick="myFunctionExitNav3()">X</button>
+        </div>
+        <div id="navBasisOpdrachten">
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/Basis Opdrachten/Array.php" target="blanc">Array</a></button>
+            <button class="semesters3"><a href="../jaar 1/Semester2/Basis Opdrachten/Circle.txt" target="blanc">Circle</a></button>
+            <button class="semesters3"><a href="../jaar 1/Semester2/Basis Opdrachten/Deelbaar.txt" target="blanc">Deelbaar</a></button>
+            <button class="semesters3"><a href="../jaar 1/Semester2/Basis Opdrachten/Geheimschrijver.txt" target="blanc">Geheimschijver</a></button>
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/Basis Opdrachten/Hoofdletters.php" target="blanc">Hoofdletters</a></button>
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/Basis Opdrachten/leeftijd" target="blanc">Leeftijd</a></button>
+            <button class="semesters3"><a href="../jaar 1/Semester2/Basis Opdrachten/leeftijdgrenzen" target="blanc">Leefdijdgrenzen</a></button>
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/Basis Opdrachten/Mail%20to%20Username" target="blanc">Mail to Username</a></button>
+            <p class="p-nav">Groen is af</p>
+            <button id="exit" onclick="myFunctionExitNavBasisOpdrachten()">X</button>
+        </div>
+        <div id="navFrontend">
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/FRONTEND/Afbeeldingen/Afbeeldingen.html" target="blanc">Afbeeldingen</a></button>
+            <button class="semesters3"><a href="../jaar 1/Semester2/FRONTEND/casino (niet af)/casino.html" target="blanc">Casino</a></button>
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/FRONTEND/Events/Events.html" target="blanc">Eerstewebsite</a></button>
+            <button class="semesters3"><a href="../jaar 1/Semester2/FRONTEND/Events/Events.html" target="blanc">Events</a></button>
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/FRONTEND/Form Validate/FormZ.html" target="blanc">Form</a></button>
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/FRONTEND/Input value/Input value.html" target="blanc">Input Value</a></button>
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/FRONTEND/Tabellen/Tabellen.html" target="blanc">Tabellen</a></button>
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/FRONTEND/Tafels/Tafels.html" target="blanc">Tafels</a></button>
+            <p class="p-nav">Groen is af</p>
+            <button id="exit" onclick="myFunctionExitNavFrontend()">X</button>
+        </div>
+        <div id="navGames">
+            <button class="semesters3"><a href="../jaar 1/Semester2/FRONTEND/Afbeeldingen/Afbeeldingen.html" target="blanc">Afbeeldingen</a></button>
+            <button class="semesters3"><a class="klaar" href="../jaar 1/Semester2/FRONTEND/Afbeeldingen/Eerstewebsite/Eerstewebsite1.html" target="blanc">Casino</a></button>
+            <p class="p-nav">Groen is af</p>
+            <button id="exit" onclick="myFunctionExitNavGames()">X</button>
+        </div>

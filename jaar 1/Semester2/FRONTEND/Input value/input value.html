@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>games</title>
+        <style> 
+            #output{
+                border: solid red 2px;
+                border-radius: 10px;
+                width: 150px;
+            }
+            #input1, #input2, #input3, #input4{
+                border-radius: 20px;
+                width: 80px;
+            }
+            #input3, #input4{
+                width: 30px;
+            }
+            button{
+                background-color: red;
+                border-radius: 20px;
+            }
+            button:hover{
+                background-color: green;
+                border-radius: 0px;
+            }
+            /* label{
+                border: solid salmon 2px;
+                border-radius: 20px;
+                padding: 1px;
+            } */
+        </style>
+        <script>
+            function myFunction() {
+                console.log("het werkt " + voornaam)
+                var voornaam = document.getElementById("input1").value 
+                var achternaam = document.getElementById("input2").value 
+                var leeftijd = document.getElementById("input3").value 
+                var jaartal = document.getElementById("input4").value
+                var berekening = leeftijd - jaartal
+                document.getElementById("output").innerHTML = "Hallo ik ben: " + voornaam +" "+achternaam + " en ik ben " + leeftijd + " jaar. " + jaartal + " jaar geleden was ik " + berekening
+            }
+        </script>
+    </head>
+    <body>
+        <p id="output">...</p>
+    <table class="table1">
+            <tr>
+                <td><label>voornaam:</label></td>
+                <td><input id="input1"></td>
+            </tr>
+            <tr>
+                <td><label>achternaam:</label></td>
+                <td><input id="input2"></td>
+            </tr>
+            <tr>
+                <td><label>leeftijd:</label></td>
+                <td><input id="input3" type="number"></td>
+            </tr>
+            <tr>
+                <td><label>over:</label></td>
+                <td><input id="input4" type="number"></td>
+                <td><label>jaar...</label></td>
+            </tr>
+        </table>
+        <button onclick="myFunction()">verzenden</button>
+
+    </body>
+</html>
+

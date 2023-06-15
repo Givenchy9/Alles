@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../FormZ/Form.css" rel="stylesheet">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th></th>
+            </tr>
+            <tr>
+                <td><label>Naam:</label></td>
+                <td><Input class="redx" id="voornaam" type="text" placeholder="voornaam" onkeyup="myFunction(this)"><span id="error"></span></td>
+                <td><Input class="redx" class="achter" id="achternaam" type="text" placeholder="achternaam" onkeyup="myFunction(this)"></td>
+            </tr>
+            <tr>
+                <td>Adress:</td>
+                <td><Input onkeyup="myFunction(this)" class="redx" id="adress" type="text" placeholder="zwolle"></td>
+            </tr>
+            <tr>
+                <td>Pc Plaats:</td>
+                <td><Input onkeyup="myFunction(this)" id="postcode" type="number" placeholder="Postcode"></td>
+                <td><Input onkeyup="myFunction(this)" id="plaats" class="achter" type="text" placeholder="Plaats"></td>
+            </tr>
+            <tr>
+                <td>Telefoon:</td>
+                <td><Input onkeyup="myFunction(this)" id="telefoon" type="number" placeholder="06/"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><Input onkeyup="myFunction(this)" id="email" type="email" placeholder="...@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Geslacht:</td>
+                <td>Man<Input id="geslacht" onkeyup="myFunction(this)" type="radio">Vrouw<Input type="radio"></td>
+            </tr>
+            <tr>
+                <td id="boyband">Boyband:</td>
+                <td>
+                    <Select>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                        <option value="d">d</option>
+                        <option value="e">e</option>
+                    </Select>
+                </td>
+            </tr>
+            <tr>
+                <td>Datum inscrijving:</td>
+                <td><Input type="date" id="datum"> Opmaak: dd-mm-jjjj</td>
+            </tr>
+            <tr>
+                <td>Verstuur:</td>
+                <td><Input type="submit" ></td>
+            </tr>
+        </table>
+        <div id="demox"></div>
+        <script src="../FormZ/Form.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Vue CDN</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="app">
+        Tekst vanuit data: <ul>{{tekst}}</ul><br>
+        Tekst vanuit data: <ul>{{lijst}}</ul>
+    </div>
+
+    <script>
+        Vue.createApp({
+        data() {
+            return {
+                tekst: "dit is een test tekst",
+                lijst: ["aaa", "bee", "cee"]
+                }
+            }
+        }).mount('#app')
+    </script>
+</body>
+</html>

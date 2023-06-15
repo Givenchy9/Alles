@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #demo{
+                border: solid red 2px;
+            }
+            #demox{
+                color: red;
+            }
+        </style>
+        <script>
+            function validateFrom() {
+                console.log("het werkt")
+                let a = document.getElementById("voornaam").value;
+                let b = document.getElementById("achternaam").value;
+                let c = voornaam.length
+                let d = achternaam.length
+
+                if (a == "") {
+                    document.getElementById("voornaam").style.backgroundColor = "red";
+                    document.getElementById("demox").innerHTML = "Voornaam  invullen!!!"
+                    return false
+                } else {
+                    document.getElementById("voornaam").style.backgroundColor = "green"
+                    document.getElementById("voornaam").innerHTML = ""
+                }
+                if (c.length > 10) {
+                    document.getElementById("voornaam").style.backgroundColor = "orange";
+                    document.getElementById("demox").innerHTML = "Wilt u de gegevens A.U.B invullen"
+                    return false
+                }
+                if (b == "") {
+                    document.getElementById("achternaam").style.backgroundColor = "red";
+                    document.getElementById("demox").innerHTML = "Achternaam invullen!!!"
+                    return false
+                } else {
+                    document.getElementById("achternaam").style.backgroundColor = "green"
+                    document.getElementById("achternaam").innerHTML = ""
+                }
+                if (b == "?") {
+                    document.getElementById("achternaam").style.backgroundColor = "orange";
+                    document.getElementById("demox").innerHTML = "Wilt u de gegevens A.U.B invullen"
+                    return false
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        Voornaam:<input id="voornaam" type="text"><br>
+        Achternaam:<input id="achternaam" type="text">
+        <p id="demo">...</p>
+        <p id="demox"></p>
+        <button id="drukken" type="send" onclick="validateFrom()">drukken</button>
+    </body>
+</html>

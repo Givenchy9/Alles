@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #outputDiv{
+          border: 1px solid red;
+          border-radius: 3px;
+          padding: 5px;
+        }
+        #lt{
+            width: 40px;
+        }
+        #jaartal{
+            width: 40px;
+        }
+    </style>
+    <script>
+        function myFunction6() {
+           // console.log("myFunction6 is gestart")
+          let vnaam = document.getElementById("vn").value
+          let anaam = document.getElementById("an").value
+          let leeftijd = document.getElementById("lt").value
+          let jaartal = document.getElementById("jaartal").value
+        //   let text = "Hallo ik ben "
+        //   text = text + vnaam + " "
+        //   text = text + anaam
+          let x = leeftijd
+          let y = jaartal
+          let z = x - y 
+          document.getElementById("outputDiv").innerHTML = "hallo mijn naam is: " + vnaam + " " + anaam + " " + "en ik ben " + leeftijd + " jaar oud " + jaartal + " jaar geleden was ik: " + z + " jaar oud.";
+        }
+    </script>
+</head> 
+
+<body>
+    output:<br>
+    <div id="outputDiv">
+        test
+    </div>  
+    <br>
+    <table>
+        <tr>
+            <td>voornaam:</td>
+            <td><input type="text" id="vn"></td>
+        </tr>
+        <tr>
+            <td>achternaam:</td>
+            <td><input type="text" id="an"></td>
+        </tr>
+        <tr>
+            <td>leeftijd:</td>
+            <td><input type="text" id="lt"></td>
+        </tr>
+        <tr>
+            <td>jaartal:</td>
+            <td><input type="number" id="jaartal"></td>
+        </tr>
+    </table>
+    <button type="button" onclick="myFunction6()">plaats text</button>
+
+</body>
+</html>

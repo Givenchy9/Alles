@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #input{
+                margin-left: 100px;
+            }
+            .achter{
+                margin-left: -70px;
+            }
+            #demox{
+                color: red;
+            }
+        </style>
+        <script>
+            // function myFunction() {
+            //     console.log("open myFunction()")
+            //     let voornaam = document.getElementById("voornaam").value;
+            //     let lengtevoornaam = voornaam.length
+            //     console.log("De lengte van " + voornaam + " is : " + lengtevoornaam)
+
+            //     document.getElementById("output").innerHTML = "Mijn naam is = " + voornaam;
+
+            //     if (lengtevoornaam > 10 || lengtevoornaam < 2) {
+            //         document.getElementById("voornaam").style.backgroundcolor = "red"
+            //         document.getElementById("error").innerHTML = "mag niet lannger dan 10 karakters zijn"
+            //     } else {
+            //         document.getElementById("voornaam").style.backgroundcolor = "green"
+            //     }
+            // }
+            function validateFrom() {
+                console.log("het werkt")
+                let a = document.getElementById("voornaam").value;
+                let b = document.getElementById("achternaam").value;
+                let c = document.getElementById("adress").value;
+                let d = document.getElementById("postcode").value;
+                let e = document.getElementById("plaats").value;
+                let f = document.getElementById("telefoon").value;
+                let g = document.getElementById("email").value;
+                let y = voornaam.length
+                let z = achternaam.length
+
+                if (a == "") {
+                    document.getElementsByClassName("redx").style.backgroundColor = "red";
+                    document.getElementById("demox").innerHTML = "Rood invullen!!!"
+                    return false
+                } else {
+                    document.getElementById("voornaam").style.backgroundColor = "green"
+                    document.getElementById("voornaam").innerHTML = ""
+                }
+                if (c > 10) {
+                    document.getElementById("voornaam").style.backgroundColor = "orange";
+                    document.getElementById("demox").innerHTML = "Wilt u de gegevens A.U.B invullen"
+                    return false
+                }
+                if (b == "") {
+                    document.getElementById("achternaam").style.backgroundColor = "red";
+                    document.getElementById("demox").innerHTML = "Rood invullen!!!"
+                    return false
+                } else {
+                    document.getElementById("achternaam").style.backgroundColor = "green"
+                    document.getElementById("achternaam").innerHTML = ""
+                }
+                if (b == "?") {
+                    document.getElementById("achternaam").style.backgroundColor = "orange";
+                    document.getElementById("demox").innerHTML = "Wilt u de gegevens A.U.B invullen"
+                    return false
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th></th>
+            </tr>
+            <tr>
+                <td><label>Naam:</label></td>
+                <td><Input class="redx" id="voornaam" type="text" placeholder="naam" onkeyup="myFunction"><span id="error"></span></td>
+                <td><Input class="redx" class="achter" id="achternaam" type="text" placeholder="achternaam"></td>
+            </tr>
+            <tr>
+                <td>Adress:</td>
+                <td><Input class="redx" id="adress" type="text" placeholder="zwolle"></td>
+            </tr>
+            <tr>
+                <td>Pc Plaats:</td>
+                <td><Input id="postcode" type="text" placeholder="Postcode"></td>
+                <td><Input id="plaats" class="achter" type="text" placeholder="Plaats"></td>
+            </tr>
+            <tr>
+                <td>Telefoon:</td>
+                <td><Input id="telefoon" type="text" placeholder="06/"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><Input id="email" type="text" placeholder="...@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Geslacht:</td>
+                <td>Man<Input id="geslacht" type="radio">Vrouw<Input type="radio"></td>
+            </tr>
+            <tr>
+                <td id="boyband">Boyband:</td>
+                <td>
+                    <Select>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                        <option value="d">d</option>
+                        <option value="e">e</option>
+                    </Select>
+                </td>
+            </tr>
+            <tr>
+                <td>Geb.Datum:</td>
+                <td><Input type="date" id="datum"> Opmaak: dd-mm-jjjj</td>
+            </tr>
+            <tr>
+                <td>Verstuur:</td>
+                <td><Input type="submit" onclick="validateFrom()"></td>
+            </tr>
+        </table>
+        <div id="demox"></div>
+    </body>
+</html>

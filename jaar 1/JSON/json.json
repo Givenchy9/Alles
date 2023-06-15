@@ -1,0 +1,25 @@
+{
+        "users": 
+        [
+            {
+                "fistname" : "Adam",
+                "lastname" : "arkan",
+                "age" : "22"
+            },
+            {
+                "fistname" : "bob",
+                "lastname" : "blub",
+                "age" : "18"
+            },
+            {
+                "fistname" : "collin",
+                "lastname" : "ceron",
+                "age" : "28"
+            },
+            {
+                "fistname" : "darren",
+                "lastname" : "deluxe",
+                "age" : "34"
+            }
+        ]
+}

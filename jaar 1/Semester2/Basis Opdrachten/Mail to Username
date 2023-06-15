@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+            }
+            #container{
+                background-color: black;
+                margin: auto;
+                width: 250px;
+                border: solid blue 3px;
+                padding: 10px;
+                border-radius: 20px;
+            }
+            label{
+                color: white;
+            }
+            #email1{
+                border-radius: 20px;
+                width: 140px;   
+                border: solid blue 2px;
+            }
+            #email2{
+                border-radius: 20px;
+                width: 100px;   
+                border: solid red 2px;
+            }
+            #submit{
+                border-radius: 20px;
+                background-color: white;
+            }
+            #output1{
+                border-radius: 20px;
+                background-color: white;
+                border: solid blue 2px;
+            }
+            #output2{
+                border-radius: 20px;
+                background-color: white;
+                border: solid blue 2px;
+            }
+            #output3{
+                border-radius: 20px;
+                background-color: white;
+                border: solid blue 2px;
+            }
+            #message{
+                display: none;
+                position: relative;
+                background-color: black;
+                height: 210px;
+                width: 270px;
+                margin-top: 20px;
+                margin: auto;
+                border: solid red 3px;
+                border-radius: 20px;
+            }   
+            #message p {    
+              padding: 10px 35px;
+                font-size: 18px;
+            }
+            .valid{
+                color: green;
+            }
+            .valid:before{
+                position: relative;
+                content: "✔";
+            }
+            .invalid{
+                color: red;
+            }
+            .invalid:before{
+                position: relative;
+                content: "✖";
+            }
+        </style>
+        <script>
+            let email1 = document.getElementById("email1");
+            let apestaartje = document.getElementById("apestaartje");
+            let punt = document.getElementById("punt");
+            let letter = document.getElementById("letter");
+            var length = document.getElementById("length");
+            var capital = document.getElementById("capital");
+
+
+
+           function myFunctionOnBlur() {
+            document.getElementById("message").style.display = "block";
+           }
+           function myFunctionOnFucus() {
+            document.getElementById("message").style.display = "block"
+           }
+
+           function myFunction() {
+            console.log("het werkt")
+            let lowerCaseLetters = /[a-z]/g;
+            if(document.getElementById("email1").value.match(lowerCaseLetters)) {  
+                document.getElementById("letter").classList.remove("invalid");
+                document.getElementById("letter").classList.add("valid");
+            } else {
+                document.getElementById("letter").classList.remove("valid");
+                document.getElementById("letter").classList.add("invalid");
+            } 
+
+
+            if(document.getElementById("email1").value.length > 8) {
+                document.getElementById("letter").classList.remove("invalid");
+                document.getElementById("letter").classList.add("valid");
+                document.getElementById("email1").innerHTML = "maximaal aantal nummers 10"
+                document.getElementById("email1").style.color = "orange"
+            } else {
+                document.getElementById("letter").classList.remove("valid");
+                document.getElementById("letter").classList.add("invalid");
+            } 
+        }
+        
+        function myFunctionKnop(){
+            let email = document.getElementById("email1").value
+            let result1 = email.split("." , 1)
+            let result2 = email.split("." || "@")
+            let result3 = email.split("@")
+            let resulta = email.split("@" , 1)
+            let resultb = email.split("@")
+            let samen = 
+            // let samen = result1 + result2 + result2x;
+            document.getElementById("output1").innerHTML = result1;
+            document.getElementById("output2").innerHTML = result2[1];  
+            document.getElementById("output3").innerHTML = resulta;
+        }
+        // function myFunction1() {
+        //     console.log("het werkt2")
+        //     let lowerCaseLetters = /[a-z]/g;
+        //     if(document.getElementById("email1").value.match(lowerCaseLetters)) {  
+        //         document.getElementById("letter").classList.remove("invalid");
+        //         document.getElementById("letter").classList.add("valid");
+        //     } else {
+        //         document.getElementById("letter").classList.remove("valid");
+        //         document.getElementById("letter").classList.add("invalid");
+        //     } 
+        // }
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <label id="label">Email:</label>
+            <input onfocus="myFunctionOnFucus()" onblur="myFunctionOnBlur()" onfocus="myFunction()" name="email1" id="email1" type="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <button onclick="myFunctionKnop()" id="submit" type="submit">knop</button>
+            <label>Voornaam</label><p id="output1">...</p>
+            <label>Achternaam/Tot @</label><p id="output2">...</p>
+            <label>Achternaam/Tot @</label><p id="output3">...</p>
+        </div>
+        
+        <div id="message">
+            <p class="invalid" id="apestaartje">Ww moet een '@' bevatten</p>
+            <p class="invalid" id="punt">Ww moet een 'Punt' bevatten</p>
+            <p class="invalid" id="letter">letter</p>
+        </div>
+    </body>
+</html>

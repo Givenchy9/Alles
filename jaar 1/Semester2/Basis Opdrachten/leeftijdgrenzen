@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #output{
+                border: solid black 2px;
+            }
+        </style>
+        <script>
+            function myFunction() {
+                let a = document.getElementById("input").value 
+                document.getElementById("output").innerHTML = a 
+                }
+                
+                
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="input" min="9" maxlength="2" size="1">
+        <button id="button" onclick="myFunction()">knop</button>
+        <p id="output"></p>
+    </body>
+</html>

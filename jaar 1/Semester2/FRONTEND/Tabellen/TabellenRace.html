@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>games</title>
+        <style>
+            table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            }
+            .float{
+                padding-left: 80px;
+            }
+
+            #print-report{
+                border-right: none;
+            }
+            #SI.NO{
+                padding-left: 3px;
+            }
+            .column{
+                border-left: solid gray 1px;
+                border-right: none;
+            }
+            .column2{
+                border-left: solid gray 1px;
+                border-right: solid black 2px;
+            }
+            .A{
+                border-bottom: none;
+                border-top: none;
+                padding-left: 25px;
+            }
+            .B{
+                border-bottom: none;
+                border-top: none;
+                padding-left: 25px;
+            }
+            .numbers{
+                border-right: solid gray 1px;
+                border-left: solid gray 1px;
+            }
+            .middel{
+                border-left: none;
+                border-right: none;
+            }
+
+
+            .A-Total{
+                padding-left: 200px;
+            }
+            .B-Total{
+                padding-left: 200px;
+            }
+            .AB{
+                padding-left: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+
+            <tr>
+                <th id="print-report">Print Report</th>
+            </tr>
+            <tr>
+                <th class="column" id="SI.NO">SI.NO</th>
+                <th class="column">Column1</th>
+                <th class="column2">Column2</th>
+                <th class="numbers">100</th>
+                <th class="numbers">500</th>
+                <th class="numbers">200</th>
+                <th class="numbers">600</th>
+                <th class="numbers">300</th>
+                <th class="numbers">400</th>
+                <th class="numbers">Total</th>
+            </tr>
+            <tr>
+                <td class="float">1</td>
+                <td class="A"></td>
+                <td>bar</td>
+                <td class="numbers">0</td>
+                <td class="numbers">0</td>
+                <td class="numbers">1</td>
+                <td class="numbers">0</td>
+                <td class="numbers">1</td>
+                <td class="numbers">0</td>
+                <td class="numbers">2</td>
+            </tr>
+            <tr>
+                <td class="float">2</td>
+                <td class="A">A</td>
+                <td>baz</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td class="float">3</td>
+                <td class="A"></td>
+                <td>foo</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td class="middel"></td>
+                <td class="middel"></td>
+                <td class="middel" class="A-Total" class="AB">A Total</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td class="float">4</td>
+                <td class="B"></td>
+                <td>bar</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td class="float">5</td>
+                <td class="B">B</td>
+                <td>bar</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td class="float">6</td>
+                <td class="B"></td>
+                <td>bar</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td class="middel"></td>
+                <td class="middel"></td>
+                <td class="middel" class="B-Total" class="AB">B Total</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td class="middel">Grand Total:</td>
+                <td class="middel"></td>
+                <td class="middel"></td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+
+        </table>
+    </body>
+</html>
+

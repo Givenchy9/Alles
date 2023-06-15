@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <p id="demo">De schat kist van captain nose ligt tussen de ABC eilanden. De kaat kan je vinden in de kaart van captain eye. de kist ligt precies op het dek onder de tafel met de olievlek. De sleutel van de schat ligt in de kruik vol zout die kan je vinden in  het opslagplaats</p>
+        <button>Geheime taal</button>
+    </body>
+</html>
