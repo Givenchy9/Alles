@@ -1,0 +1,526 @@
+#body{
+    background-color: white;
+    margin: 0;
+}
+#background-img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+#header{
+    background-color: lightblue;
+    height: 10vh;
+}
+#eye{
+    position: absolute;
+    background-color: lemonchiffon;
+}
+#eye-off{
+    margin-left: 80px;
+    position: absolute;
+    background-color: lemonchiffon;
+}
+#title{
+    width: 130px;
+    margin: auto;
+    position: absolute;
+    display: block;
+    position: relative;
+    background-color: lemonchiffon;
+    border-radius: 20px;
+    border: solid black 3px;
+}
+#welcome{
+    width: 150px;
+    height: 20px;
+    background-color: lemonchiffon;
+    float: right;
+    position: relative;
+    margin-top: -42.5px;
+}
+#title1{
+    margin: auto;
+}
+
+
+
+#nav{
+    background-color: lemonchiffon;
+    height: 5vh;
+    overflow: hidden;
+    position: sticky;
+}
+#nav-div{
+    width: 225px;
+    margin: auto;
+    transition: 2s;
+}
+.nav-divs{
+    background-color: lightblue;
+    margin-top: 3px;
+    height: 30px;
+}
+.nav-divs:hover{
+    background-color: red;
+    margin-top: 3px;
+    height: 30px;
+    border-radius: 20px;
+    transition: 2s;
+}
+.pages-exit{
+    background-color: orange;
+}
+
+#page1{
+    padding: 10px;
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    z-index: 2;
+    position: absolute;
+    margin-left: 15%;
+    border: solid black 5px;
+    visibility: hidden;
+}
+#page1-exit{
+    width: 50px;
+    background-color: red;
+}
+#page1-buttons{
+    width: 380px;
+    margin: auto;
+}
+.page1-button{
+    background-color: lemonchiffon;
+}
+.page1-button:active{
+    margin: auto;
+    background-color: red;
+    border-radius: 20px;
+}
+.page1-button:hover{
+    margin: auto;
+    background-color: red;
+    border-radius: 20px;
+}
+#page11{
+    overflow: auto;
+    visibility: hidden;
+    background-color: purple;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page12{
+    overflow: auto;
+    visibility: hidden;
+    background-color: purple;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page13{
+    overflow: auto;
+    visibility: hidden;
+    background-color: purple;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page14{
+    overflow: auto;
+    visibility: hidden;
+    background-color: purple;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page15{
+    overflow: auto;
+    visibility: hidden;
+    background-color: purple;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page16{
+    overflow: auto;
+    visibility: hidden;
+    background-color: purple;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page15{
+    overflow: auto;
+    visibility: hidden;
+    background-color: purple;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page16{
+    overflow: auto;
+    visibility: hidden;
+    background-color: purple;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page2{
+    padding: 10px;
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    z-index: 2;
+    position: absolute;
+    margin-left: 15%;
+    border: solid black 5px;
+    visibility: hidden;
+}
+#page2-exit{
+    width: 50px;
+    background-color: red;
+}
+#page2-buttons{
+    width: 360px;
+    margin: auto;
+}
+.page2-button{
+    background-color: lemonchiffon;
+}
+#page21{
+    visibility: hidden;
+    background-color: red;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+    overflow: auto;
+}
+#page22{
+    visibility: hidden;
+    background-color: red;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+    overflow: auto;
+}
+#page23{
+    visibility: hidden;
+    background-color: red;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+    overflow: auto;
+}
+#page24{
+    visibility: hidden;
+    background-color: red;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page25{
+    visibility: hidden;
+    background-color: red;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page3{
+    padding: 10px;
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    z-index: 2;
+    position: absolute;
+    margin-left: 15%;
+    border: solid black 5px;
+    visibility: hidden;
+}
+#page3-exit{
+    width: 50px;
+    background-color: red;
+}
+#page3-buttons{
+    width: 380px;
+    margin: auto;
+}
+.page3-button{
+    background-color: lemonchiffon;
+}
+#page31{
+    visibility: hidden;
+    background-color: green;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page32{
+    visibility: hidden;
+    background-color: green;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+    overflow: hidden;
+}
+#page33{
+    visibility: hidden;
+    background-color: green;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+    overflow: hidden;
+}
+#page34{
+    visibility: hidden;
+    background-color: green;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page35{
+    visibility: hidden;
+    background-color: green;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page4{
+    padding: 10px;
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    z-index: 2;
+    position: absolute;
+    margin-left: 15%;
+    border: solid black 5px;
+    visibility: hidden;
+}
+#page4-exit{
+    width: 50px;
+    background-color: red;
+}
+#page4-buttons{
+    width: 380px;
+    margin: auto;
+}
+.page4-button{
+    background-color: lemonchiffon;
+}
+#page41{
+    visibility: hidden;
+    background-color: blue;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+    overflow: auto;
+}
+#page42{
+    visibility: hidden;
+    background-color: blue;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+    overflow: auto;
+}
+#page43{
+    visibility: hidden;
+    background-color: blue;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+    overflow: auto;
+}
+#page44{
+    visibility: hidden;
+    background-color: blue;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page45{
+    visibility: hidden;
+    background-color: blue;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    border: solid black 2px;
+}
+
+    
+    
+    
+    
+    
+    
+.page-buttonx{
+    float: right;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+.page-blocks{
+    height: 200px;
+    width: 200px;
+}
+.page-pic{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 20px;
+    position: absolute;
+    border: solid black 2px;
+}
+#page11-pic2{
+    margin-left: 250px;
+}
+#page11-pic3{
+    margin-left: 480px;
+}
+#page11-pic4{
+    margin-left: 710px;
+}
+#page11-pic5{
+    margin-top: 250px;
+}
+#page11-pic6{
+    margin-top: 250px;
+    margin-left: 250px;
+}
+#page11-pic7{
+    margin-top: 250px;
+    margin-left: 480px;
+}
+#page11-pic8{
+    margin-top: 250px;
+    margin-left: 710px;
+}
+#page11-pic9{
+    margin-top: 480px;
+}
+#page11-pic10{
+    margin-top: 480px;
+    margin-left: 250px;
+}
+#page11-pic11{
+    margin-top: 480px;
+    margin-left: 480px;
+}
+#page11-pic12{
+    margin-top: 480px;
+    margin-left: 710px;
+}
+.page-pics{
+    height: 150px;
+    width: 200px;
+    overflow: hidden;
+    border-bottom: solid black 2px;
+}
+.page-pics13{
+    height: 100px;
+    width: 200px;
+    overflow: hidden;
+}
+.page-pics14{
+    height: 100px;
+    width: 60px;
+    margin-left: 30%;
+    overflow: hidden;
+}
+.page-pics15{
+    height: 150px;
+    width: 200px;
+    margin: auto;
+}
+.page-pics22{
+    height: 120px;
+    width: 90px;
+    margin: auto;
+}
+.page-pics23{
+    height: 120px;
+    width: 160px;
+    margin: auto;
+}
+
+#page11-pics1{
+    position: absolute;
+}
+#page11-pics1:hover{
+    opacity: 0%;
+}
+#page11-pics11{
+    position: absolute;
+}
+
+
+#main{
+    height: 70vh;
+    width: 100%;
+    margin-top: 30px;
+}
+.main-img{
+    height: 20px;
+    width: 20px;
+}
+#buttons{
+    margin: auto;
+    width: 310px;
+}
+.buttons{
+    height: 5vh;
+    background-color: lightblue;
+    border-radius: 20px;
+    border: solid black 2px;
+}
+#button-main1, #button-main2, #button-main3, #button-main4, #button-main5{
+    color: black;
+}
+#logout{
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    float: right;
+    border-radius: 20px;
+    border: solid black 2px;
+    margin: auto;
+}
+#cart{
+    background-color: white;
+    height: 70px;
+    width: 200px;
+    /* visibility: hidden; */
+    border: solid black 2px;
+}
+footer{
+    background-color: lemonchiffon;
+    border-top: solid lightblue 6px;
+    height: 10vh;
+}

@@ -1,0 +1,91 @@
+!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>country api</title>
+
+    <link rel="stylesheet" href="country.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+    <h1>All country's</h1>
+
+    <h2>https://restcountries.com/v3.1/all</h2>
+
+    <div id="country_div">
+
+        Countries
+
+    </div>
+
+    <script>
+
+        axios.get('https://restcountries.com/v3.1/all')
+
+            .then(function (response) {
+
+            let countries = response.data
+
+            console.log(countries);
+
+            let htm = "Hier zie je alle landen in de wereld";
+
+            htm += "<h1>Country Info</h1><table>"
+
+                htm += "<tr>";
+
+                    htm += "<th>";
+
+                        htm += "name";
+
+                    htm += "</th>";
+
+                    htm += "<th>";
+
+                        htm += "capital";
+
+                    htm += "</th>";
+
+                    htm += "<th>";
+
+                        htm += "region";
+
+                    htm += "</th>";
+
+                htm += "</tr>";
+
+            countries.forEach (function (country, index) {
+
+                htm += "<tr>";
+
+                    htm += "<td>" + country.name.common +"</td>";
+
+                    htm += "<td>" + country.capital +"</td>";
+
+                    htm += "<td>" + country.region +"</td>";
+
+                htm += "<tr>";
+
+                })
+
+            document.getElementById("country_div").innerHTML = htm
+
+        })
+
+    </script>
+
+</body>
+
+</html>
